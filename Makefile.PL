@@ -1,3 +1,12 @@
+use lib qw(inc);
+use Devel::CheckLib;
+
+check_lib_or_exit(
+    lib => [qw(tamuanova)],
+    header => "tamu_anova/tamu_anova.h"
+);
+
+
 use 5.008006;
 use ExtUtils::MakeMaker;
 # See lib/ExtUtils/MakeMaker.pm for details of how to influence
