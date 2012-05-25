@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:               Math-TamuAnova
-version:            1.0.1
+version:            1.0.2
 abstract:           Perl extension for the tamuanova library
 author:
     - Vincent Danjean <Vincent.Danjean@ens-lyon.org>

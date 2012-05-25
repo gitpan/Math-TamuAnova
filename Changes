@@ -20,3 +20,8 @@ Vincent Danjean (2):
       Add dependency check for libtamuanova
       Dump version for new release
 
+Version 1.0.2
+=============
+Vincent Danjean (1):
+      workaround gsl linking problems
+

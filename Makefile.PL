@@ -2,7 +2,7 @@ use lib qw(inc);
 use Devel::CheckLib;
 
 check_lib_or_exit(
-    lib => [qw(tamuanova)],
+    lib => [qw(blas)],
     header => "tamu_anova/tamu_anova.h"
 );
 
@@ -18,7 +18,7 @@ WriteMakefile(
     ($] >= 5.005 ?     ## Add these new keywords supported since 5.005
       (ABSTRACT_FROM  => 'lib/Math/TamuAnova.pm', # retrieve abstract from module
        AUTHOR         => 'Vincent Danjean <Vincent.Danjean@ens-lyon.org>') : ()),
-    LIBS              => ['-ltamuanova'], # e.g., '-lm'
+    LIBS              => ['-ltamuanova -lblas'], # e.g., '-lm'
     DEFINE            => '-Wall', # e.g., '-DHAVE_SOMETHING'
     INC               => '-I.', # e.g., '-I. -I/usr/include/other'
 	# Un-comment this if you add C files to link with later:

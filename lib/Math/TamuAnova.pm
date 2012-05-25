@@ -35,7 +35,7 @@ our @EXPORT = qw(
 	anova_random
 );
 
-our $VERSION = '1.0.1';
+our $VERSION = '1.0.2';
 
 sub AUTOLOAD {
     # This AUTOLOAD is used to 'autoload' constants from the constant()
